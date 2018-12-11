@@ -1,0 +1,217 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    &___carousel {
+        background-image: rgba(#000, .85);
+        margin-top: 1rem;
+    }
+
+    &__carousel-image {
+        max-height: 100vh;
+        min-width: 100vw;
+    }
+}
+
+.navbar {
+    display: flex;
+    padding: 1rem 0;
+    margin-bottom: -10rem;
+    justify-content: space-around;
+    z-index: 100;
+    text-align: center;
+
+    background-color: rgba(#000, .75);
+    color: #fff;
+    align-content: center;
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.6rem;
+        justify-content: center;
+        align-content: center;
+        margin-top: 2rem;
+
+        &:hover {
+            color: #999;
+        }
+
+    }
+
+    &__logo {
+        max-width: 25rem;
+        max-height: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+}
+
+.bottombar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -4.8rem;
+
+    background-color: rgba(#000, .5);
+
+    &__link {
+        justify-items: center;
+        align-items: center;
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+
+    &__icon {
+        max-height: 4rem;
+        max-width: auto;
+        justify-items: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+
+
+
+
+//////OTHER SECTIONS ARE BELOW HERE JUST FOR REFERENCE! SHOULD BE SPLIT INTO OTHER FILES
+.food {
+margin-top: -1rem;
+}
+
+.food, .craftshop {
+    display: flex;
+    background-image: url(../../img/textures/wild_oliva.png);
+    background-color: rgba(#333, .5);
+    color: #fff;
+
+    &__background {
+        padding: 4rem;
+    }
+}
+
+.book, .area {
+    display: flex;
+    background-image: url(../../img/textures/white_wall.png);
+    background-color: rgba(#000, .5);
+
+    &__background {
+        padding: 4rem;
+    }
+}
+
+// .craftshop {
+//     display: flex;
+//     background-color: yellow;
+
+//     &__background {
+//         padding: 4rem;
+//     }
+// }
+
+// .area {
+//     display: flex;
+//     background-color: red;
+
+//     &__background {
+//         padding: 4rem;
+//     }
+// }
+
+.section-imagel {
+    width: 30rem;
+    height: 30rem;
+    float: left;
+    transform: translateX(-3rem);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px inset #555;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+    }
+}
+
+.section-imager {
+    width: 30rem;
+    height: 30rem;
+    float: right;
+    transform: translateX(3rem);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px inset #fff;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+    }
+}
+
+.text {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.button {
+    float: right;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    justify-content: space-around;
+    padding: 5rem;
+    color: #fff;
+
+    border-top: 5px inset #fff;
+}
+
+.fb {
+    max-width: 20%;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+.stayintouch {
+    text-align: center;
+    font-size: 1.5rem;
+
+    &__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: inherit;
+    }
+
+}
